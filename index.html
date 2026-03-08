@@ -1,303 +1,153 @@
-/* =========================
-   AEGFX Homepage Styling
-   ========================= */
+<div class="aegfx-home">
 
-.aegfx-home {
-  --aegfx-bg: #0f0f10;
-  --aegfx-bg-soft: #171719;
-  --aegfx-panel: #1d1d20;
-  --aegfx-text: #f3efe8;
-  --aegfx-muted: #b7b0a4;
-  --aegfx-line: rgba(255,255,255,0.08);
-  --aegfx-accent: #ff7a1a;
-  --aegfx-accent-hover: #ff8c38;
-  --aegfx-max: 1240px;
+  <section class="aegfx-hero">
+    <div class="aegfx-hero-inner">
+      <p class="aegfx-kicker">AEGFX</p>
+      <h1>Live Event Graphics, Video Playback & Presentation Support</h1>
+      <p class="aegfx-lead">
+        Specialist visual and technical support for conferences, awards, corporate events and live productions.
+      </p>
 
-  color: var(--aegfx-text);
-  background: var(--aegfx-bg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-}
+      <div class="aegfx-hero-buttons">
+        <a href="/what-we-do" class="aegfx-btn aegfx-btn-primary">What We Do</a>
+        <a href="/portfolio" class="aegfx-btn aegfx-btn-secondary">View Portfolio</a>
+      </div>
+    </div>
+  </section>
 
-.aegfx-home * {
-  box-sizing: border-box;
-}
+  <section class="aegfx-section aegfx-intro">
+    <div class="aegfx-container">
+      <div class="aegfx-grid aegfx-grid-2">
+        <div>
+          <h2>Built for live shows</h2>
+          <p>
+            AEGFX provides specialist show graphics, presentation playback, speaker content handling, motion graphics
+            and visual delivery for live events. We support agencies, production companies and direct clients with
+            reliable, show-ready workflows for high-pressure environments.
+          </p>
+        </div>
+        <div>
+          <h2>Trusted support</h2>
+          <p>
+            From keynote sessions and awards shows to LED walls and breakout rooms, we help ensure content looks right,
+            plays back properly and lands on screen exactly when it should.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.aegfx-container {
-  width: min(calc(100% - 40px), var(--aegfx-max));
-  margin: 0 auto;
-}
+  <section class="aegfx-section">
+    <div class="aegfx-container">
+      <div class="aegfx-section-heading">
+        <p class="aegfx-eyebrow">Services</p>
+        <h2>What we do</h2>
+      </div>
 
-.aegfx-section {
-  padding: 72px 0;
-}
+      <div class="aegfx-grid aegfx-grid-4">
+        <div class="aegfx-card">
+          <h3>Presentation Playback</h3>
+          <p>PowerPoint, Keynote and show-file support for polished, reliable on-stage delivery.</p>
+        </div>
 
-.aegfx-hero {
-  min-height: 72vh;
-  display: flex;
-  align-items: center;
-  background:
-    linear-gradient(180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.45) 100%),
-    radial-gradient(circle at top right, rgba(255,122,26,0.18), transparent 28%),
-    linear-gradient(135deg, #111214 0%, #0b0b0c 100%);
-  border-bottom: 1px solid var(--aegfx-line);
-}
+        <div class="aegfx-card">
+          <h3>Motion Graphics</h3>
+          <p>Animated visual content, conference graphics, opener sequences and show branding support.</p>
+        </div>
 
-.aegfx-hero-inner {
-  width: min(calc(100% - 40px), 980px);
-  margin: 0 auto;
-  padding: 96px 0;
-}
+        <div class="aegfx-card">
+          <h3>LED Wall Content</h3>
+          <p>Content preparation, aspect planning and playback support for widescreen and custom canvases.</p>
+        </div>
 
-.aegfx-kicker,
-.aegfx-eyebrow {
-  margin: 0 0 14px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--aegfx-accent);
-}
+        <div class="aegfx-card">
+          <h3>Speaker Content Management</h3>
+          <p>Deck collection, version control, formatting and last-minute updates handled calmly and accurately.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.aegfx-hero h1 {
-  margin: 0;
-  font-size: clamp(2.5rem, 6vw, 5.5rem);
-  line-height: 0.98;
-  letter-spacing: -0.03em;
-  max-width: 10ch;
-}
+  <section class="aegfx-section aegfx-band">
+    <div class="aegfx-container">
+      <div class="aegfx-grid aegfx-grid-3">
+        <div class="aegfx-stat">
+          <span>Corporate Events</span>
+        </div>
+        <div class="aegfx-stat">
+          <span>Awards Shows</span>
+        </div>
+        <div class="aegfx-stat">
+          <span>Agency & Production Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.aegfx-lead {
-  margin: 26px 0 0;
-  font-size: 1.15rem;
-  line-height: 1.7;
-  color: var(--aegfx-muted);
-  max-width: 680px;
-}
+  <section class="aegfx-section">
+    <div class="aegfx-container">
+      <div class="aegfx-grid aegfx-grid-2 aegfx-work">
+        <div>
+          <p class="aegfx-eyebrow">Approach</p>
+          <h2>Technical when it matters. Calm when it counts.</h2>
+          <p>
+            We work behind the scenes to keep visual delivery smooth, accurate and dependable. Whether the job is
+            presentation management, show playback, motion graphics preparation or screen content support, the focus is
+            always the same: clean execution under pressure.
+          </p>
+          <a href="/contact" class="aegfx-text-link">Make an enquiry</a>
+        </div>
 
-.aegfx-hero-buttons {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 32px;
-}
+        <div class="aegfx-panel">
+          <h3>Typical support includes</h3>
+          <ul class="aegfx-list">
+            <li>Presentation formatting and cleanup</li>
+            <li>Playback operation for conferences and awards</li>
+            <li>Show graphics and motion content preparation</li>
+            <li>LED wall and custom canvas content planning</li>
+            <li>Last-minute deck updates and speaker changes</li>
+            <li>Technical liaison with production and show teams</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.aegfx-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 50px;
-  padding: 0 22px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.98rem;
-  transition: all 0.2s ease;
-}
+  <section class="aegfx-section">
+    <div class="aegfx-container">
+      <div class="aegfx-grid aegfx-grid-2">
+        <div class="aegfx-panel">
+          <p class="aegfx-eyebrow">Portfolio</p>
+          <h2>Selected work</h2>
+          <p>
+            View examples of visual work, show support and photography in the portfolio section.
+          </p>
+          <a href="/portfolio" class="aegfx-btn aegfx-btn-primary">Open Portfolio</a>
+        </div>
 
-.aegfx-btn-primary {
-  background: var(--aegfx-accent);
-  color: #111;
-}
+        <div class="aegfx-panel">
+          <p class="aegfx-eyebrow">Photography</p>
+          <h2>Photo galleries</h2>
+          <p>
+            Photography remains part of the wider AEGFX portfolio, alongside live event and production support.
+          </p>
+          <a href="/photography" class="aegfx-btn aegfx-btn-secondary">View Photography</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.aegfx-btn-primary:hover {
-  background: var(--aegfx-accent-hover);
-  transform: translateY(-1px);
-}
+  <section class="aegfx-section aegfx-contact">
+    <div class="aegfx-container">
+      <div class="aegfx-contact-box">
+        <p class="aegfx-eyebrow">Contact</p>
+        <h2>Let’s make the visuals feel easy</h2>
+        <p>
+          For live event graphics, playback support, motion content or presentation management, get in touch.
+        </p>
+        <a href="mailto:hello@aegfx.com" class="aegfx-btn aegfx-btn-primary">hello@aegfx.com</a>
+      </div>
+    </div>
+  </section>
 
-.aegfx-btn-secondary {
-  border: 1px solid rgba(255,255,255,0.14);
-  color: var(--aegfx-text);
-  background: rgba(255,255,255,0.02);
-}
-
-.aegfx-btn-secondary:hover {
-  border-color: rgba(255,255,255,0.24);
-  background: rgba(255,255,255,0.05);
-  transform: translateY(-1px);
-}
-
-.aegfx-section-heading {
-  margin-bottom: 30px;
-}
-
-.aegfx-section h2 {
-  margin: 0 0 18px;
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  line-height: 1.06;
-  letter-spacing: -0.02em;
-}
-
-.aegfx-section h3 {
-  margin: 0 0 12px;
-  font-size: 1.2rem;
-  line-height: 1.2;
-}
-
-.aegfx-section p {
-  margin: 0;
-  color: var(--aegfx-muted);
-  line-height: 1.75;
-  font-size: 1rem;
-}
-
-.aegfx-grid {
-  display: grid;
-  gap: 22px;
-}
-
-.aegfx-grid-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.aegfx-grid-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.aegfx-grid-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.aegfx-card,
-.aegfx-panel,
-.aegfx-contact-box {
-  background: var(--aegfx-panel);
-  border: 1px solid var(--aegfx-line);
-  border-radius: 24px;
-  padding: 28px;
-}
-
-.aegfx-card {
-  min-height: 220px;
-}
-
-.aegfx-card p,
-.aegfx-panel p {
-  color: var(--aegfx-muted);
-}
-
-.aegfx-band {
-  background: var(--aegfx-bg-soft);
-  border-top: 1px solid var(--aegfx-line);
-  border-bottom: 1px solid var(--aegfx-line);
-}
-
-.aegfx-stat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 110px;
-  padding: 20px;
-  border: 1px solid var(--aegfx-line);
-  border-radius: 20px;
-  background: rgba(255,255,255,0.02);
-  text-align: center;
-}
-
-.aegfx-stat span {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--aegfx-text);
-}
-
-.aegfx-work {
-  align-items: start;
-}
-
-.aegfx-list {
-  margin: 14px 0 0;
-  padding-left: 18px;
-  color: var(--aegfx-muted);
-  line-height: 1.9;
-}
-
-.aegfx-list li + li {
-  margin-top: 2px;
-}
-
-.aegfx-text-link {
-  display: inline-block;
-  margin-top: 18px;
-  color: var(--aegfx-accent);
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.aegfx-text-link:hover {
-  text-decoration: underline;
-}
-
-.aegfx-contact {
-  padding-bottom: 90px;
-}
-
-.aegfx-contact-box {
-  text-align: center;
-  padding: 40px 28px;
-}
-
-.aegfx-contact-box h2 {
-  max-width: 12ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.aegfx-contact-box p {
-  max-width: 720px;
-  margin: 0 auto 24px;
-}
-
-/* =========================
-   SmugMug cleanup helpers
-   ========================= */
-
-/* Hide default block spacing if needed */
-.aegfx-home .sm-page-widget,
-.aegfx-home .sm-page-content {
-  margin: 0;
-  padding: 0;
-}
-
-/* =========================
-   Responsive
-   ========================= */
-
-@media (max-width: 1100px) {
-  .aegfx-grid-4 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 800px) {
-  .aegfx-section {
-    padding: 56px 0;
-  }
-
-  .aegfx-grid-2,
-  .aegfx-grid-3,
-  .aegfx-grid-4 {
-    grid-template-columns: 1fr;
-  }
-
-  .aegfx-hero {
-    min-height: auto;
-  }
-
-  .aegfx-hero-inner {
-    padding: 72px 0;
-  }
-
-  .aegfx-hero h1 {
-    max-width: none;
-  }
-
-  .aegfx-lead {
-    font-size: 1.02rem;
-  }
-
-  .aegfx-card,
-  .aegfx-panel,
-  .aegfx-contact-box {
-    border-radius: 20px;
-    padding: 24px;
-  }
-}
+</div>
