@@ -17,7 +17,10 @@ body{
   font-family:Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
   -webkit-font-smoothing:antialiased;
 }
-main{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 24px}
+main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;padding:48px 24px}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 40px;font-size:13px;letter-spacing:.14em}
+nav a{color:#d9d9d9;text-decoration:none;padding-bottom:4px;border-bottom:1px solid rgba(217,217,217,.25);transition:color .15s,border-color .15s}
+nav a:hover,nav a:focus-visible{color:#e7302a;border-color:#e7302a;outline:none}
 .logo{display:block;width:min(62vw,520px);height:auto}
 h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 footer{
@@ -42,13 +45,17 @@ footer a:hover,footer a:focus-visible{color:#e7302a;border-color:#e7302a;outline
 <path fill="#e7302a" d="M489.08,7.21a4.72,4.72,0,0,1,4.73-4.72H596.75a4.71,4.71,0,0,1,4.72,4.72v27.1A4.72,4.72,0,0,1,596.75,39H527.87v35.8h56.69a4.9,4.9,0,0,1,4.73,4.73v27.1a4.89,4.89,0,0,1-4.73,4.72H527.87v60.42a4.89,4.89,0,0,1-4.72,4.73H493.81a4.73,4.73,0,0,1-4.73-4.73Z"/>
 <path fill="#e7302a" d="M672.09,87.27,621.86,9.45c-2-3.23,0-7,4.23-7h36.3a5.38,5.38,0,0,1,4,2.23L695,51h.25L724.3,4.72a5,5,0,0,1,4-2.23h36.3c4.23,0,6.46,3.73,4.23,7L718.33,87.27l52.22,82.3c2.23,3.48,0,7-4,7H732a5.57,5.57,0,0,1-4.23-2.24l-32.57-50.23h-.5L662.88,174.3a5.44,5.44,0,0,1-4.22,2.24H624.1c-4.23,0-6.47-3.73-4.23-7Z"/>
 </svg>
+<nav aria-label="AEGFX LTD sites">
+<a href="https://photo.aegfx.com">photo.aegfx.com</a>
+<a href="https://slidesize.com">slidesize.com</a>
+</nav>
 </main>
 <footer>
 <ul>
 <li><strong>AEGFX LTD</strong></li>
-<li>Registered in England and Wales, company no. 11785167</li>
+<li>Registered in England and Wales, Company No. 11785167</li>
 <li>Registered office 24 Hurst Hill Cottages, Bramley, Surrey GU5 0JG</li>
-<li>VAT no. GB 314 7265 13</li>
+<li>VAT No. GB 314 7265 13</li>
 <li><a href="mailto:info@aegfx.com">info@aegfx.com</a></li>
 </ul>
 </footer>
