@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tools | AEGFX LTD</title>
+<meta name="description" content="Free browser tools for people who build and run show content, built and maintained by AEGFX LTD.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1a1a1a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111111'/%3E%3Crect x='14' y='14' width='36' height='36' fill='%23e7302a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=DM+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Colour tokens match slidesize.com shared.css so the two sites read as one. */
+:root{--bg:#1a1a1a;--panel:#262626;--border2:#3d3d3d;--red:#E7302A;--red2:#ff4f49;--text:#F2F2F2;--label:#D9D9D9;--muted:#9C9C9C;--mono:'Share Tech Mono',monospace;--sans:'DM Sans',sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--text)}
+a:focus-visible{outline:2px solid var(--red2);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px}
+header.wrap{padding-top:20px;padding-bottom:20px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px}
+.brand{display:inline-flex;align-items:center;min-height:44px}
+.brand img{height:28px;width:auto;display:block}
+header nav{display:flex;flex-wrap:wrap;gap:8px 28px}
+header nav a{display:inline-flex;align-items:center;min-height:44px;font-size:15px;font-weight:500;text-decoration:none;border-bottom:2px solid transparent}
+header nav a:hover{color:#fff;border-bottom-color:var(--border2)}
+header nav a[aria-current="page"]{border-bottom-color:var(--red)}
+.hero{padding-top:64px;padding-bottom:56px;display:flex;flex-direction:column;gap:20px}
+h1{margin:0;font-size:clamp(44px,8vw,64px);font-weight:700;line-height:1;letter-spacing:2px;text-transform:uppercase;color:var(--red)}
+.hero p{margin:0;max-width:720px;line-height:1.5}
+.lead{font-size:20px}
+.sub{font-size:16px;color:var(--label)}
+section.wrap{padding-bottom:56px;display:flex;flex-direction:column;gap:18px}
+.sec-head{display:flex;align-items:center;gap:12px}
+.sec-head::before,.sec-head::after{content:'';flex:1;height:1px;background:var(--border2)}
+.sec-head h2{margin:0;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--red2);white-space:nowrap}
+.sec-note{margin:0;font-size:15px;line-height:1.5;color:var(--label);text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--border2);border-top:2px solid var(--a);border-radius:2px;padding:22px 20px 14px;display:flex;flex-direction:column;gap:14px;text-decoration:none;transition:border-color .15s,background .15s}
+a.card:hover{border-color:var(--a);background:#2b2b2b}
+div.card{padding-bottom:22px}
+.card-title{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.card h3{margin:0;font-size:17px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--a2);border:1px solid var(--a2);border-radius:2px;padding:2px 6px}
+.card p{margin:0;font-size:14px;line-height:1.6;color:var(--muted);flex-grow:1}
+.go{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:44px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--a2)}
+.go svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cta{background:var(--panel);border:1px solid var(--border2);border-top:2px solid var(--red);border-radius:2px;padding:40px 32px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px}
+.cta div{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.cta h2{margin:0;font-size:clamp(24px,4vw,32px);font-weight:700;line-height:1.15;letter-spacing:1px;text-transform:uppercase;color:#fff}
+.cta p{margin:0;max-width:640px;font-size:17px;line-height:1.5;color:var(--label)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;background:var(--red);color:#fff;font-size:20px;font-weight:700;text-decoration:none;border-radius:2px;transition:background .15s}
+.btn:hover{background:var(--red2)}
+footer{border-top:1px solid var(--border2);padding:26px 24px 30px;font-size:12px;line-height:1.7;letter-spacing:.04em;color:var(--muted);text-align:center}
+footer ul{list-style:none;margin:0;padding:0}
+footer strong{color:var(--text);font-weight:500;letter-spacing:.08em}
+footer a{color:inherit}
+footer a:hover{color:var(--red2)}
+</style>
+</head>
+<body>
+<header class="wrap">
+<a class="brand" href="/"><img src="/aegfx-logo-white.svg" alt="AEGFX LTD home" width="121" height="28"></a>
+<nav aria-label="Main">
+<a href="/">Work</a>
+<a href="/tools/" aria-current="page">Tools</a>
+<a href="https://photo.aegfx.com">Photography</a>
+<a href="mailto:info@aegfx.com">Contact</a>
+</nav>
+</header>
+<main>
+<div class="wrap hero">
+<h1>Tools</h1>
+<p class="lead">Free browser tools for people who build and run show content. Nothing uploads. Every file stays on your machine.</p>
+<p class="sub">They live at <a href="https://slidesize.com">slidesize.com</a> and are built and maintained by AEGFX LTD.</p>
+</div>
+<section class="wrap">
+<div class="sec-head"><h2>Free on SlideSize</h2></div>
+<div class="grid">
+<a class="card" style="--a:#E7302A;--a2:#ff4f49" href="https://slidesize.com/">
+<div class="card-title"><h3>Slide Size Calculator</h3><span class="chip">PX &rarr; CM</span></div>
+<p>Work out the right slide dimensions for any screen or canvas.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#4A78B5;--a2:#6a96d0" href="https://slidesize.com/ppt-report.html">
+<div class="card-title"><h3>PPT Report</h3><span class="chip">Pre-flight</span></div>
+<p>Pre-flight summary for graphics ops. Fonts, videos, hidden slides, click counts and speaker notes in one sortable report.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#F07C30;--a2:#f69a5a" href="https://slidesize.com/deck-compare.html">
+<div class="card-title"><h3>Deck Compare</h3><span class="chip">v1 vs v2</span></div>
+<p>Drop two versions of a deck and see exactly what changed, slide by slide.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#1FB6A6;--a2:#43d6c6" href="https://slidesize.com/emf-extractor.html">
+<div class="card-title"><h3>EMF Extractor</h3><span class="chip">Hybrid EMF &rarr; PDF</span></div>
+<p>Pulls the full quality PDF hidden inside Mac EMFs back out and batch converts to PNG for Windows bound decks.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#8C9EFF;--a2:#aab8ff" href="https://slidesize.com/font-extractor.html">
+<div class="card-title"><h3>Font Extractor</h3><span class="chip">Embedded &rarr; TTF</span></div>
+<p>Pull the fonts embedded in a deck back out as ordinary .ttf or .otf files.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#D96EB0;--a2:#e689c0" href="https://slidesize.com/pdf.html">
+<div class="card-title"><h3>PDF to Slides</h3><span class="chip">PDF &rarr; PNG + PPTX</span></div>
+<p>Drop a PDF, get a folder of numbered images plus a PowerPoint deck with one image per slide.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#E8C547;--a2:#f2d675" href="https://slidesize.com/list-builder.html">
+<div class="card-title"><h3>List Builder</h3><span class="chip">XLSX &rarr; PPTX</span></div>
+<p>Drop a spreadsheet of names and get a deck of lists that restyles from the Slide Master.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#E8705F;--a2:#f28c7d" href="https://slidesize.com/keynote-inspector.html">
+<div class="card-title"><h3>Keynote Inspector</h3><span class="chip">Crash check</span></div>
+<p>Drop a .key file and find the content that makes Keynote crash or crawl.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#E0A020;--a2:#f0b840" href="https://slidesize.com/media-extractor.html">
+<div class="card-title"><h3>Media Extractor</h3><span class="chip">PPT / KEY &rarr; files</span></div>
+<p>Pull every embedded asset out of a PowerPoint or Keynote deck with pixel dimensions and metadata.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#9B7BD4;--a2:#b295e0" href="https://slidesize.com/vt-inspector.html">
+<div class="card-title"><h3>VT Inspector</h3><span class="chip">Playback check</span></div>
+<p>Inspect MP4 and MOV video down to the bitstream and get the ffmpeg fix.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#7FD1AE;--a2:#9fe0c4" href="https://slidesize.com/link-matrix.html">
+<div class="card-title"><h3>Link Matrix</h3><span class="chip">HDMI / DP / Mac</span></div>
+<p>Will this canvas fit down this cable? See which HDMI, DisplayPort and Thunderbolt versions carry it.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#A6CE4E;--a2:#bfe070" href="https://slidesize.com/photo-montage.html">
+<div class="card-title"><h3>Photo Montage</h3><span class="chip">Looping video</span></div>
+<p>Drop photos and get a finished looping video with Ken Burns motion and crossfades.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#CDA873;--a2:#e0c294" href="https://slidesize.com/script-compare.html">
+<div class="card-title"><h3>Script Compare</h3><span class="chip">Script v1 vs v2</span></div>
+<p>Drop two versions of a script and get the new one with every change marked.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+<a class="card" style="--a:#6FC3E8;--a2:#96d4ef" href="https://slidesize.com/script-format.html">
+<div class="card-title"><h3>Script Format</h3><span class="chip">One sentence a line</span></div>
+<p>Drop or paste a script and get every sentence on its own line for the prompter.</p>
+<div class="go"><span>Open on SlideSize</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+</a>
+</div>
+</section>
+<section class="wrap">
+<div class="sec-head"><h2>From AEGFX LTD</h2></div>
+<p class="sec-note">Bigger tools that need an account, a server or an install.</p>
+<div class="grid">
+<div class="card" style="--a:#E7302A;--a2:#ff4f49">
+<div class="card-title"><h3>NAMEDROP</h3><span class="chip">In development</span></div>
+<p>Data driven slide builder. Title slides and table plans straight from a spreadsheet.</p>
+</div>
+<div class="card" style="--a:#E7302A;--a2:#ff4f49">
+<div class="card-title"><h3>Content Submission Portal</h3><span class="chip">In development</span></div>
+<p>One place for speakers and clients to send show content and for the show team to collect it.</p>
+</div>
+<div class="card" style="--a:#E7302A;--a2:#ff4f49">
+<div class="card-title"><h3>Batch PowerPoint to PDF</h3><span class="chip">In development</span></div>
+<p>Convert a hundred decks to PDF using the PowerPoint already on your machine.</p>
+</div>
+</div>
+</section>
+<section class="wrap">
+<div class="cta">
+<div>
+<h2>Need an operator on your show?</h2>
+<p>The person who built these tools runs graphics, Barco Event Master switching and motion graphics on corporate events worldwide.</p>
+</div>
+<a class="btn" href="mailto:info@aegfx.com">Get in touch</a>
+</div>
+</section>
+</main>
+<footer>
+<ul>
+<li><strong>AEGFX LTD</strong></li>
+<li>Registered in England and Wales, Company No. 11785167</li>
+<li>Registered office 24 Hurst Hill Cottages, Bramley, Surrey GU5 0JG</li>
+<li>VAT No. GB 314 7265 13</li>
+<li><a href="mailto:info@aegfx.com">info@aegfx.com</a></li>
+</ul>
+</footer>
+</body>
+</html>
