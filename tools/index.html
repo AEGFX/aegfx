@@ -42,8 +42,9 @@ section.wrap{padding-bottom:56px;display:flex;flex-direction:column;gap:18px}
 .sec-head h2{margin:0;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--a2,var(--red2));white-space:nowrap}
 .sec-note{margin:0;font-size:15px;line-height:1.5;color:var(--label);text-align:center}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
-.card{background:var(--panel);border:1px solid var(--border2);border-top:2px solid var(--a);border-radius:10px;padding:22px 20px 14px;display:flex;flex-direction:column;gap:14px;text-decoration:none;transition:border-color .15s,background .15s}
-a.card:hover{border-color:var(--a);background:#2b2b2b}
+.card{background:var(--panel);border:1px solid var(--border2);border-radius:10px;padding:22px 20px 14px;display:flex;flex-direction:column;gap:14px;text-decoration:none;transition:border-color .15s,background .15s,box-shadow .15s}
+/* Hover and keyboard focus outline the whole box in its section colour. The shadow adds a second pixel without moving anything. */
+a.card:hover,a.card:focus-visible{border-color:var(--a);box-shadow:0 0 0 1px var(--a);background:#2b2b2b;outline:none}
 div.card{padding-bottom:22px}
 .card-title{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
 .card h3{margin:0;font-size:17px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff}
