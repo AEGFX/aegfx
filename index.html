@@ -6,6 +6,7 @@
 <title>AEGFX LTD</title>
 <meta name="description" content="AEGFX LTD. Live event graphics, video playback and presentation support for corporate events.">
 <meta name="theme-color" content="#111111">
+<meta name="format-detection" content="telephone=no,address=no">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111111'/%3E%3Crect x='14' y='14' width='36' height='36' fill='%23e7302a'/%3E%3C/svg%3E">
 <style>
 *,*::before,*::after{box-sizing:border-box}
@@ -33,6 +34,10 @@ footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;
 footer strong{color:#f2f2f2;font-weight:500;letter-spacing:.08em}
 footer a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(217,217,217,.25);transition:color .15s,border-color .15s}
 footer a:hover,footer a:focus-visible{color:#e7302a;border-color:#e7302a;outline:none}
+@media (max-width:480px){
+  footer{padding:20px 16px 24px;font-size:min(12px,calc((100vw - 32px)/36));letter-spacing:.02em}
+  footer li{white-space:nowrap}
+}
 </style>
 </head>
 <body>
